@@ -1,10 +1,10 @@
-Seeker Rampage is a fully on-chain arcade game on Solana Mobile.
+On-chain Anchor program for the classic ladder-climbing arcade on Solana Mobile Seeker phone.
 
-- **Beta** — deployed only on **Solana Devnet**
-- **Program ID (Devnet):** `4Xk9ADQV5Gm59VSK6qo7W618cNi4gXfDokd8CdShCgD9`
-- Only your wallet address interacts with the on-chain program (high score, Legend SBT mint after Level 3, daily 0.05 SKR claim).
-- No personal data collected. No analytics. No tracking. No cookies.
-- Frontend client is closed-source (standard practice).
-- All token distribution and SBT logic lives 100% on-chain.
+- Reach Level 3 → FREE Legend SBT (first 1000 mints)
+- SKR claim for Legend holders
 
-Mainnet launch coming soon.
+**Open-source:** Only the Anchor smart contract (for full on-chain transparency).  
+Frontend (React Native + Skia + Redux) is closed-source.
+
+**Current deployment:**  
+Devnet Program ID: `7N3D97mmgFXiKN9LrHyQZKcpVBzukh34DDYpnSqaoTov`
