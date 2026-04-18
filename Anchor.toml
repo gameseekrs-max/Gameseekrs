@@ -6,7 +6,7 @@ resolution = true
 skip-lint = false
 
 [programs.devnet]
-seeker_rampage = "2PqFqo8jmaEJCuisn7mz9ueHUAbpmsqHXTiHY2WYhhUv"
+seeker_rampage = "7N3D97mmgFXiKN9LrHyQZKcpVBzukh34DDYpnSqaoTov"
 
 [provider]
 cluster = "devnet"
