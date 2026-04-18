@@ -1,0 +1,18 @@
+[package]
+name = "seeker-rampage"
+description = "Arcade SBT Program"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "seeker_rampage"
+ 
+[dependencies]
+anchor-lang = { version = "1.0.0", features = ["init-if-needed"] }
+anchor-spl = "1.0.0"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+
+[features]
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
