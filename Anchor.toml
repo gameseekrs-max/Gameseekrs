@@ -6,11 +6,12 @@ resolution = true
 skip-lint = false
 
 [programs.devnet]
-seeker_rampage = "7N3D97mmgFXiKN9LrHyQZKcpVBzukh34DDYpnSqaoTov"
+seeker_rampage = "J1K3v6h1gWDbMqTZCgCzhptHLphCmxqh11fJEMZhcTJA"
 
 [provider]
 cluster = "devnet"
-wallet = "~/.config/solana/devnet-keypair.json"
+# Must match `DEPLOYER_AUTHORITY` in `programs/seeker-rampage/src/lib.rs` (Vault Runner / new project keys).
+wallet = "vault-runner-authority.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

@@ -1,5 +1,7 @@
 .anchor
 .DS_Store
+# Local deploy keypair (pubkey baked into program as DEPLOYER_AUTHORITY / upgrade signers)
+vault-runner-authority.json
 target
 **/*.rs.bk
 node_modules

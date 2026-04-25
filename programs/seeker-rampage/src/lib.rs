@@ -14,16 +14,18 @@ use anchor_lang::solana_program::{
     program::invoke_signed,
 };
 
-declare_id!("7N3D97mmgFXiKN9LrHyQZKcpVBzukh34DDYpnSqaoTov");
+declare_id!("J1K3v6h1gWDbMqTZCgCzhptHLphCmxqh11fJEMZhcTJA");
 
-pub const DEPLOYER_AUTHORITY: Pubkey = pubkey!("4oisjFF93q8bc8XHGRzVMLgyfDo4QgVYkuHhGJXKBkMt");
+/// Must match `Anchor.toml` [provider] wallet pubkey (`vault-runner-authority.json`).
+pub const DEPLOYER_AUTHORITY: Pubkey = pubkey!("B12cy3qDRYDLDgNDQYXytUfAhNVAohTEsAYY2sdFr6xt");
 
+/// Devnet: single-wallet gate (same pubkey × 5). Replace with a multisig set before mainnet.
 pub const UPGRADE_SIGNERS: [Pubkey; 5] = [
-    pubkey!("Cb5oSphaAcboWbcPGCkC5sCJpCxju8AutuuyzS2YxhcZ"),
-    pubkey!("4hxyaYTdyvtVKHhar6AbTPKRzBt9w1z4ya1BQwRQCvxi"),
-    pubkey!("EMvzV9ogyStHi85NqLbFhxyFyGp75JrZ6keLYPQcGfUm"),
-    pubkey!("GQ1BfmsvdVDTJc76YrLs7KTdTVnYaN32kiejoWgFG1FQ"),
-    pubkey!("EepdQCT1HkNHAVLMjUHYXLBSeuo3SR7znk2nEz47rhW5"),
+    pubkey!("B12cy3qDRYDLDgNDQYXytUfAhNVAohTEsAYY2sdFr6xt"),
+    pubkey!("B12cy3qDRYDLDgNDQYXytUfAhNVAohTEsAYY2sdFr6xt"),
+    pubkey!("B12cy3qDRYDLDgNDQYXytUfAhNVAohTEsAYY2sdFr6xt"),
+    pubkey!("B12cy3qDRYDLDgNDQYXytUfAhNVAohTEsAYY2sdFr6xt"),
+    pubkey!("B12cy3qDRYDLDgNDQYXytUfAhNVAohTEsAYY2sdFr6xt"),
 ];
 
 #[error_code]
@@ -138,6 +140,15 @@ pub mod seeker_rampage {
         config.authority = DEPLOYER_AUTHORITY;
         config.bump = ctx.bumps.legend_config;
         msg!("✅ LegendConfig initialized");
+        Ok(())
+    }
+
+    pub fn initialize_program_config(ctx: Context<InitializeProgramConfig>) -> Result<()> {
+        let c = &mut ctx.accounts.program_config;
+        c.daily_rewards_enabled = false;
+        c.authority = DEPLOYER_AUTHORITY;
+        c.bump = ctx.bumps.program_config;
+        msg!("✅ ProgramConfig initialized (daily rewards off until toggle)");
         Ok(())
     }
 
@@ -293,15 +304,30 @@ pub struct UpgradeQueued {
 #[account] pub struct BootstrapPool { pub authority: Pubkey, pub bump: u8 }
 #[account] pub struct UpgradeGate { pub approvals: u8, pub last_reset: i64, pub bump: u8, pub timelock_duration: i64, pub queued_at: i64, pub paused: bool }
 
-#[derive(Accounts)] pub struct PlayGame<'info> { #[account(mut)] pub user_state: Account<'info, UserState>, pub user: Signer<'info> }
+#[derive(Accounts)]
+pub struct PlayGame<'info> {
+    #[account(
+        init_if_needed,
+        payer = user,
+        space = 8 + 4 + 1,
+        seeds = [b"user_state", user.key().as_ref()],
+        bump
+    )]
+    pub user_state: Account<'info, UserState>,
+    #[account(mut)]
+    pub user: Signer<'info>,
+    pub system_program: Program<'info, System>,
+}
 
 #[derive(Accounts)] #[instruction(label1: String, label2: String)] pub struct MintLegendSbt<'info> {
     #[account(mut)] pub legend_config: Account<'info, LegendConfig>,
     #[account(mut)] pub sbt_mint: Account<'info, Mint>,
     #[account(mut)] pub user_sbt_account: Account<'info, TokenAccount>,
     #[account(init, payer = user, space = 8 + 32 + 1 + 4 + 64 + 4 + 64 + 8 + 1 + 1, seeds = [b"legend_status", user.key().as_ref()], bump)] pub user_legend_status: Account<'info, LegendStatus>,
-    #[account(mut)] pub user_state: Account<'info, UserState>,
-    #[account(mut)] pub user: Signer<'info>,
+    #[account(mut, seeds = [b"user_state", user.key().as_ref()], bump)]
+    pub user_state: Account<'info, UserState>,
+    #[account(mut)]
+    pub user: Signer<'info>,
     pub authority: Signer<'info>,
     pub token_program: Program<'info, Token>,
     pub system_program: Program<'info, System>,
@@ -330,6 +356,13 @@ pub struct UpgradeQueued {
     pub system_program: Program<'info, System>,
 }
 
+#[derive(Accounts)] pub struct InitializeProgramConfig<'info> {
+    #[account(init, payer = user, space = 8 + 1 + 32 + 1, seeds = [b"program-config"], bump)]
+    pub program_config: Account<'info, ProgramConfig>,
+    #[account(mut)] pub user: Signer<'info>,
+    pub system_program: Program<'info, System>,
+}
+
 #[derive(Accounts)] pub struct ClaimDailySKR<'info> {
     #[account(mut)] pub user_legend_status: Account<'info, LegendStatus>,
     #[account(mut, seeds = [b"bootstrap-pool"], bump)] pub bootstrap_pool: Account<'info, BootstrapPool>,
@@ -337,16 +370,18 @@ pub struct UpgradeQueued {
     #[account(mut, seeds = [b"reward-pool"], bump)] pub reward_pool: Account<'info, RewardPool>,
     #[account(mut, associated_token::mint = skr_mint, associated_token::authority = reward_pool)] pub reward_pool_token: Account<'info, TokenAccount>,
     #[account(mut)] pub user_skr_account: Account<'info, TokenAccount>,
-    #[account(mut)] pub program_config: Account<'info, ProgramConfig>,
-    #[account(mut)] pub user_state: Account<'info, UserState>,
+    #[account(mut, seeds = [b"program-config"], bump)]
+    pub program_config: Account<'info, ProgramConfig>,
+    #[account(mut, seeds = [b"user_state", user.key().as_ref()], bump)]
+    pub user_state: Account<'info, UserState>,
     pub user: Signer<'info>,
-    pub authority: Signer<'info>,
     pub token_program: Program<'info, Token>,
     pub skr_mint: Account<'info, Mint>,
 }
 
 #[derive(Accounts)] pub struct ToggleDailyRewards<'info> {
-    #[account(mut)] pub program_config: Account<'info, ProgramConfig>,
+    #[account(mut, seeds = [b"program-config"], bump)]
+    pub program_config: Account<'info, ProgramConfig>,
     #[account(mut, seeds = [b"upgrade-gate"], bump = upgrade_gate.bump)] pub upgrade_gate: Account<'info, UpgradeGate>,
     pub authority: Signer<'info>,
 }
