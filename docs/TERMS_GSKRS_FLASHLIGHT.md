@@ -3,7 +3,7 @@
 **Last updated:** April 25, 2026  
 **Operator / publisher:** GameSeekrs (see [PRIVACY_GSKRS_FLASHLIGHT.md](./PRIVACY_GSKRS_FLASHLIGHT.md) for who we are and contact on X).
 
-> **Monorepo copy** — canonical editable copy for the app also lives in **`GSkrsFlashlight/docs/TERMS_GSKRS_FLASHLIGHT.md`**. Public listing URL: `gameseekrs-max/Gameseekrs` on GitHub, path `docs/TERMS_GSKRS_FLASHLIGHT.md`.
+> **Public listing (this file)** on **`gameseekrs-max/Gameseekrs`**. **Canonical edits** live in the private app repo: **`GSkrsFlashlight/docs/TERMS_GSKRS_FLASHLIGHT.md`** — copy or PR here so the in-app **Terms** link (GitHub `blob/main` → this path) stays current.
 
 These Terms of Use (“Terms”) govern your use of **GSkrs Flashlight** (the “App”): a torch, strobe, camera / Clip & Pick utility with **optional** Solana Mobile **Wallet Adapter** (MWA) connect and **message signing** (no transaction broadcast in the reference build). The App targets **Solana Mobile Seeker** (Android). We do **not** ship an iOS build for this title. By using the App, you agree to these Terms.
 
@@ -51,3 +51,7 @@ To the extent permitted, you and GameSeekrs agree to resolve disputes in a forum
 
 - **X:** [@gameseekrs](https://x.com/gameseekrs)  
 - **This document (in-app):** [docs/TERMS_GSKRS_FLASHLIGHT.md](https://github.com/gameseekrs-max/Gameseekrs/blob/main/docs/TERMS_GSKRS_FLASHLIGHT.md)
+
+---
+
+*For comparison only: **Seeker Mobile Calc** (Optima Sanitas) uses a similar structure but is a different product; see `~/Groking/Optima_newApps/SeekerMobileCalc/docs/TERMS.md`.*
