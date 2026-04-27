@@ -1,5 +1,9 @@
+# Anchor + GameSeekrs — keep in family with VaultRunner / GSkrsFlashlight for env hygiene.
 .anchor
 .DS_Store
+.env
+.env.*
+!.env.example
 # Local deploy keypair (pubkey baked into program as DEPLOYER_AUTHORITY / upgrade signers)
 vault-runner-authority.json
 target
