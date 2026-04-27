@@ -1,0 +1,68 @@
+/* GameSeekrs legal pages — GitHub Pages (docs/legal). Mobile-friendly, readable. */
+:root {
+  --bg: #0b0d10;
+  --text: #e8ecf0;
+  --muted: #8a93a0;
+  --link: #58a6ff;
+  --border: #2a3040;
+  --accent: #00ffff;
+}
+* { box-sizing: border-box; }
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+  padding: 1.25rem 1rem 2.5rem;
+}
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 0 0.75rem;
+  color: #fff;
+}
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--accent);
+}
+p, ul { margin: 0 0 0.75rem; }
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 0.35rem; }
+pre, .mono {
+  font-size: 0.8rem;
+  overflow-x: auto;
+  background: #12151a;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.sourcelink {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+footer {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
