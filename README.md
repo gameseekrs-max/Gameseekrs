@@ -1,5 +1,7 @@
 On-chain Anchor program for **Vault Runner** — a **GameSeekrs** arcade title **for [Solana Mobile Seeker](https://solanamobile.com/seeker)** (Android). PDAs are per this program id.
 
+**Handoff (2026-04-26):** Privacy + README copy updated for **Seeker**; **`main` pushed** to **`gameseekrs-max/Gameseekrs`**. **GSkrs Flashlight** client is **not** this repo; legal for Flashlight is `docs/PRIVACY_GSKRS_FLASHLIGHT.md` (Flashlight’s own git remote **not** created yet on the dev machine used for that pass).
+
 - Reach Level 3 → FREE Legend SBT (first 1000 mints)
 - SKR claim for Legend holders
 
