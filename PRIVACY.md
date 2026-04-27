@@ -1,10 +1,10 @@
 # Privacy Policy — GameSeekrs: Vault Runner (Beta)
 
-**Last updated:** April 25, 2026
+**Last updated:** April 26, 2026
 
 ## Who we are
 
-**GameSeekrs** publishes **Vault Runner**, a Solana Mobile game. We do **not** operate a standalone website. Official updates and contact are on **X**: [@gameseekrs](https://x.com/gameseekrs).
+**GameSeekrs** publishes **Vault Runner**—an arcade game **for [Solana Mobile Seeker](https://solanamobile.com/seeker)** (Solana Mobile’s **Android** phone). This client ships as an **Android** app for the **Solana Mobile dApp Store**; we do **not** provide an iOS build. We do **not** operate a standalone website; high scores and bragging rights live on-chain and on **X**: [@gameseekrs](https://x.com/gameseekrs).
 
 This policy covers the **Vault Runner** mobile app (React Native client; **not** open-sourced) and its use of the **Vault Runner** on-chain program on Solana (**open-source** in this repository).
 
@@ -43,6 +43,12 @@ We may update this policy by committing a new version to this **public** GitHub 
 
 - **X:** [@gameseekrs](https://x.com/gameseekrs)
 - **Program / legal docs:** this repo — [Privacy (this file)](https://github.com/gameseekrs-max/Gameseekrs/blob/main/PRIVACY.md) (update path if your published branch or folder layout differs).
+
+## Related product — GSkrs Flashlight
+
+**GameSeekrs** also publishes **GSkrs Flashlight**, a separate Solana Mobile utility (torch, strobe, Clip & Pick, optional wallet). It has **its own** privacy policy in this repository:
+
+- **[docs/PRIVACY_GSKRS_FLASHLIGHT.md](./docs/PRIVACY_GSKRS_FLASHLIGHT.md)** — use that URL for **GSkrs Flashlight** dApp Store listings and in-app “Privacy” for the flashlight app. This **Vault Runner** policy does not replace that document for Flashlight users.
 
 ---
 

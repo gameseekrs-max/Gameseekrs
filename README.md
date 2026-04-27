@@ -1,4 +1,4 @@
-On-chain Anchor program for **Vault Runner** (Solana Mobile arcade; PDAs are per this program id).
+On-chain Anchor program for **Vault Runner** — a **GameSeekrs** arcade title **for [Solana Mobile Seeker](https://solanamobile.com/seeker)** (Android). PDAs are per this program id.
 
 - Reach Level 3 → FREE Legend SBT (first 1000 mints)
 - SKR claim for Legend holders
@@ -17,8 +17,9 @@ Provider wallet: `vault-runner-authority.json` (gitignored) — pubkey must matc
 
 | Piece | Visibility | Typical GitHub remote | Notes |
 |--------|------------|----------------------|--------|
-| **This repo** (`Gameseekrs`) | **Public** | `gameseekrs-max/Gameseekrs` | Anchor program, **PRIVACY.md**, **LICENSE.md**, compliance links for stores and forms. |
+| **This repo** (`Gameseekrs`) | **Public** | `gameseekrs-max/Gameseekrs` | Anchor program, **PRIVACY.md**, **LICENSE.md**, **[docs/PRIVACY_GSKRS_FLASHLIGHT.md](./docs/PRIVACY_GSKRS_FLASHLIGHT.md)** (second-app privacy), compliance links for stores and forms. |
 | **Vault Runner app** (React Native) | **Private** | e.g. `gameseekrs-max/SeekrsRampageApp` | Rename the GitHub repo to match **Vault Runner** branding when convenient; update local `git remote` and any CI. |
+| **GSkrs Flashlight** (React Native) | **Private** (typical) | e.g. `gameseekrs-max/GSkrsFlashlight` | Seeker companion app; listing privacy URL = **`docs/PRIVACY_GSKRS_FLASHLIGHT.md`** in this public repo. |
 
 There is **no** standalone GameSeekrs marketing website; official social presence is **[@gameseekrs on X](https://x.com/gameseekrs)**. Legal and program transparency use **this public Git** (links above).
 
@@ -32,5 +33,6 @@ There is **no** standalone GameSeekrs marketing website; official social presenc
 
 ## Legal files in this repo
 
-- **[PRIVACY.md](./PRIVACY.md)** — Vault Runner / GameSeekrs beta privacy policy (link this URL in app stores, Solana Mobile forms, etc.).
+- **[PRIVACY.md](./PRIVACY.md)** — Vault Runner / GameSeekrs beta privacy policy (link this URL for **Vault Runner** store listings and forms).
+- **[docs/PRIVACY_GSKRS_FLASHLIGHT.md](./docs/PRIVACY_GSKRS_FLASHLIGHT.md)** — **GSkrs Flashlight** privacy policy (link this URL for the **Flashlight** dApp Store listing; complements `PRIVACY.md` above).
 - **[LICENSE.md](./LICENSE.md)** — MIT license for the Anchor program in this repository.
