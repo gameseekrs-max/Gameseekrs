@@ -9,9 +9,12 @@ These static pages (`*.html` + `base.css`) are the **in-app and store** targets 
 3. **Branch:** `main` (or your default) → folder **`/docs`**
 4. **Save**
 
-Live base URL:
+Live base URLs (same deployment after custom domain is set):
 
-**`https://gameseekrs-max.github.io/Gameseekrs/`**
+- **SNS + Sol.site (reviewers / MWA identity):** **`https://gameseekrs.sol.site`**
+- **GitHub Pages default:** **`https://gameseekrs-max.github.io/Gameseekrs/`**
+
+**Landing page:** **`../index.html`** at the site root — both apps, disclaimer, legal links, and official URLs (same pattern as Optima’s public legal repo).
 
 Legal routes (used by **VaultRunner** and **GSkrsFlashlight** `publicLinks.ts`):
 

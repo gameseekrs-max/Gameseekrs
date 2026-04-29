@@ -11,13 +11,13 @@ This policy covers the **Vault Runner** mobile app (React Native client; **not**
 ## On-chain program (transparent)
 
 - **Devnet program id:** `J1K3v6h1gWDbMqTZCgCzhptHLphCmxqh11fJEMZhcTJA`
-- **Beta:** gameplay and rewards logic are exercised on **Solana Devnet** until you are told otherwise.
+- **Beta:** on-chain program behavior is exercised on **Solana Devnet** for testing until a **mainnet** deployment and updated policy are published; we do not guarantee any particular reward, pool, or token distribution from the beta client.
 - **Anchor source:** same repo as this file — see **`README.md`** and **`LICENSE.md`**.
 
 ## What the app collects
 
 - **Wallet connection:** When you use Solana Mobile Wallet Adapter (or compatible wallets), your **wallet public key** is used to sign transactions and derive on-chain accounts. We do **not** receive your seed phrase or private key; signing happens in your wallet.
-- **On-chain data:** High scores, gameplay transactions, optional SBT mints, and token claims are recorded **on Solana** as public blockchain data. Anyone can observe those transactions on-chain.
+- **On-chain data:** High scores, gameplay transactions, and any optional SBT or token operations you sign are recorded **on Solana** as public blockchain data. Anyone can observe those transactions on-chain. Availability and rules for any on-chain program feature follow the published program and app terms when a mainnet deployment exists.
 - **Location / sensors:** If enabled in a build, device features are used only as implemented in that build’s code (see app permissions on the store listing). There is **no** in-app ad analytics SDK in the reference client described by this policy; if that changes, this document will be updated on GitHub.
 
 ## What we do not do

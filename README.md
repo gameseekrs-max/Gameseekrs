@@ -2,8 +2,8 @@ On-chain Anchor program for **Vault Runner** — a **GameSeekrs** arcade title *
 
 **Handoff (2026-04-26):** Privacy + README copy updated for **Seeker**; **`main` pushed** to **`gameseekrs-max/Gameseekrs`**. **GSkrs Flashlight** client is **not** this repo; legal for Flashlight is `docs/PRIVACY_GSKRS_FLASHLIGHT.md` (Flashlight’s own git remote **not** created yet on the dev machine used for that pass).
 
-- Reach Level 3 → FREE Legend SBT (first 1000 mints)
-- SKR claim for Legend holders
+- Reach Level 3 → Legend SBT offer (eligibility in published app / terms when a mainnet program is announced)
+- Optional on-chain features for qualified accounts follow the deployed program; **not** a public promise of any SKR distribution until you publish that program and policies
 
 **Open-source:** Only the Anchor smart contract (for full on-chain transparency).  
 The **React Native** Vault Runner client is developed separately and is **not** required to be open-source.
@@ -23,7 +23,7 @@ Provider wallet: `vault-runner-authority.json` (gitignored) — pubkey must matc
 | **Vault Runner app** (React Native) | **Private** | e.g. `gameseekrs-max/SeekrsRampageApp` | Rename the GitHub repo to match **Vault Runner** branding when convenient; update local `git remote` and any CI. |
 | **GSkrs Flashlight** (React Native) | **Private** (typical) | e.g. `gameseekrs-max/GSkrsFlashlight` | Seeker companion app; listing privacy URL = **`docs/PRIVACY_GSKRS_FLASHLIGHT.md`** in this public repo. |
 
-There is **no** standalone GameSeekrs marketing website; official social presence is **[@gameseekrs on X](https://x.com/gameseekrs)**. Legal and program transparency use **this public Git** (links above).
+**Public HTTPS (SNS `gameseekrs.sol` + Sol.site):** **`https://gameseekrs.sol.site`** — same GitHub Pages content as below, once the custom domain is configured. **[@gameseekrs on X](https://x.com/gameseekrs)** is for social updates. Legal and program transparency also use **this public Git** (links above).
 
 ---
 

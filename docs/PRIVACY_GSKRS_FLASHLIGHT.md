@@ -8,7 +8,7 @@
 
 This policy covers **only** the **GSkrs Flashlight** mobile application (React Native; client source may be private). It **complements** the **Vault Runner** policy and on-chain program disclosure in the same public repository: **[PRIVACY.md](../PRIVACY.md)**.
 
-**Companion product — same suite, different app:** **Vault Runner** is our arcade game from the same publisher; see **[PRIVACY.md](../PRIVACY.md)** for wallet and on-chain practices specific to gameplay and rewards.
+**Companion product — same suite, different app:** **Vault Runner** is our arcade game from the same publisher; see **[PRIVACY.md](../PRIVACY.md)** for wallet and on-chain practices specific to gameplay. **Do not** read the companion app policy as a promise of any live reward pool or “daily” distribution until the Vault program and terms on **mainnet** are published.
 
 ## What the app does (summary)
 
