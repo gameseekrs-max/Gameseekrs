@@ -6,6 +6,8 @@
 
 **GameSeekrs** public program + legal docs live in **`gameseekrs-max/Gameseekrs`**. Same SNS / HTTPS identity as the apps: **`gameseekrs.sol`** → **`https://gameseekrs.sol.site`** (see **`../VaultRunner/docs/continuation.md`** and **`~/Groking/Games/continuation.md`**). Not Optima (**`optimasanitas.sol`**).
 
+**2026-04-29 — Sol.site:** **sns.id** may **lock Sol.site configuration for 48 hours** after domain actions; until **Configure** unlocks, **`gameseekrs.sol.site`** cannot be pointed at GitHub — use **`~/Groking/Games/continuation.md`** § *48-hour lock* and test via **`gameseekrs-max.github.io/Gameseekrs/`** if needed.
+
 ## Long-form context
 
 - **App, wallet, store, Flashlight, deploy:** use **`../VaultRunner/docs/continuation.md`** in the **Games** monorepo (or the **VaultRunner** clone under `~/Groking/Games/VaultRunner` on this machine).
