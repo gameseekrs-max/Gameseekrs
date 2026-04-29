@@ -17,9 +17,11 @@ Provider wallet: `vault-runner-authority.json` (gitignored) — pubkey must matc
 
 ## Repositories (GameSeekrs)
 
+**GameSeekrs** is the **brand** for Seeker games and utilities — **Vault Runner** (arcade) and **GSkrs Flashlight** ship today; **additional titles** under the same line should keep using **`https://gameseekrs.sol.site`** and extend **`docs/index.html`** / **`docs/legal/`** as you add policies.
+
 | Piece | Visibility | Typical GitHub remote | Notes |
 |--------|------------|----------------------|--------|
-| **This repo** (`Gameseekrs`) | **Public** | `gameseekrs-max/Gameseekrs` | Anchor program, **PRIVACY.md**, **LICENSE.md**, **[docs/PRIVACY_GSKRS_FLASHLIGHT.md](./docs/PRIVACY_GSKRS_FLASHLIGHT.md)** (second-app privacy), compliance links for stores and forms. |
+| **This repo** (`Gameseekrs`) | **Public** | `gameseekrs-max/Gameseekrs` | Anchor program, **PRIVACY.md**, **LICENSE.md**, **[docs/PRIVACY_GSKRS_FLASHLIGHT.md](./docs/PRIVACY_GSKRS_FLASHLIGHT.md)** (Flashlight privacy), compliance links for stores and forms. |
 | **Vault Runner app** (React Native) | **Private** | e.g. `gameseekrs-max/SeekrsRampageApp` | Rename the GitHub repo to match **Vault Runner** branding when convenient; update local `git remote` and any CI. |
 | **GSkrs Flashlight** (React Native) | **Private** (typical) | e.g. `gameseekrs-max/GSkrsFlashlight` | Seeker companion app; listing privacy URL = **`docs/PRIVACY_GSKRS_FLASHLIGHT.md`** in this public repo. |
 
