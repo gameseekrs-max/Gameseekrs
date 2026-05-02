@@ -12,3 +12,6 @@ node_modules
 test-ledger
 .yarn
 .surfpool
+
+# Cursor/agent continuation notes — keep local only
+CONTINUATION.md
