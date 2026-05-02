@@ -1,6 +1,6 @@
 # `gameseekrs.sol` → Sol.site + GitHub Pages
 
-**Product line:** GameSeekrs (**gameseekrs-max**) — games and utilities on Seeker; **Vault Runner** and **GSkrs Flashlight** are the shipping titles today; the same **`gameseekrs.sol.site`** hub is meant to cover **future GameSeekrs apps** (extend `docs/index.html` and `docs/legal/` as you ship). Not Optima Sanitas.
+**Product line:** GameSeekrs (**gameseekrs-max**) — games and utilities on Seeker; **Vault Runner** and **GSkrs Flashlight** ship today; the same **`gameseekrs.sol.site`** hub covers future titles — extend **`gameseekrs-site`** (`index.html` + `vault-runner/` / `flashlight/` or new folders). Legacy **`docs/`** pages optional during migration. Not Optima Sanitas.
 
 ## URLs
 
@@ -9,14 +9,17 @@
 | **SNS name** | `gameseekrs.sol` |
 | **HTTPS (MWA `identity.uri`, reviewers)** | `https://gameseekrs.sol.site` |
 | **Code** | `GAMESEEKRS_MWA_IDENTITY_URI` in **`VaultRunner`** / **`GSkrsFlashlight`** `src/config/publicLinks.ts` |
-| **Legal HTML + landing** | Public **`gameseekrs-max/Gameseekrs`**: **`docs/index.html`** (line hub) + **`docs/legal/*.html`** — `GAMESEEKRS_LEGAL_PAGES_BASE` in the RN apps points here. |
+| **Legal HTML + landing (preferred)** | **`gameseekrs-max/gameseekrs-site`**: root **`index.html`**, **`vault-runner/*.html`**, **`flashlight/*.html`** — migrate `GAMESEEKRS_LEGAL_PAGES_BASE` here (see **`docs/MIGRATION_GAMESEEKRS_SITE.md`**). |
+| **Legal HTML (legacy)** | **`gameseekrs-max/Gameseekrs`**: **`docs/index.html`** + **`docs/legal/*.html`** until migration completes. |
 | **`docs/CNAME`** | Contains **`gameseekrs.sol.site`** for GitHub Pages custom domain (push with `seeker-rampage` → **Gameseekrs**). |
 
 ## Wiring checklist
 
 1. Register **`gameseekrs.sol`** on [sns.id](https://sns.id).
 2. **Sol.site → Configure:** CNAME to **`gameseekrs-max.github.io`** ([SNS docs](https://docs.sns.id/collection/sns-v2/sol.site/website-configuration.md)).
-3. Repo **`gameseekrs-max/Gameseekrs`:** **Settings → Pages → Custom domain** → **`gameseekrs.sol.site`**, enable HTTPS (repo includes **`docs/CNAME`**; GitHub may adjust it when you save).
-4. Open **`https://gameseekrs.sol.site/`** — should load **`docs/index.html`** plus **`/legal/…`** paths (same as `gameseekrs-max.github.io/Gameseekrs/` when Pages uses **`/docs`**).
+3. **Custom domain (pick one deployment):**
+   - **Preferred:** Repo **`gameseekrs-max/gameseekrs-site`** → Pages from **`/`** on **`main`** → **Custom domain** `gameseekrs.sol.site` (add **`CNAME`** file in that repo when ready). Remove or retarget domain on **Gameseekrs** so only one site owns the hostname.
+   - **Legacy:** Repo **`gameseekrs-max/Gameseekrs`** → Pages from **`/docs`** → **`docs/CNAME`** already names **`gameseekrs.sol.site`**.
+4. Open **`https://gameseekrs.sol.site/`** — should load the active hub (`gameseekrs-site` root or **`Gameseekrs` docs** until you switch).
 
 Until DNS resolves, wallet sheets still target **`https://gameseekrs.sol.site`** — finish SNS + Pages before store submission.

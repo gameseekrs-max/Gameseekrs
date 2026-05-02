@@ -1,8 +1,10 @@
-# GameSeekrs — public legal HTML (GitHub Pages)
+# GameSeekrs — public legal HTML (legacy `docs/legal`)
 
-These static pages (`*.html` + `base.css`) are the **in-app and store** targets for **Privacy**, **Terms**, and **License**, following the same pattern as **Seeker Mobile Calc** (`optimasanitas.github.io/seeker-mobile-calc-legal/…`).
+> **Preferred hub:** dedicated repo **`gameseekrs-max/gameseekrs-site`** — root **`index.html`**, **`vault-runner/`**, **`flashlight/`**, **`assets/legal.css`**. See **`../MIGRATION_GAMESEEKRS_SITE.md`**.
 
-**Enable GitHub Pages** on **`gameseekrs-max/Gameseekrs`**:
+These static pages (`*.html` + `base.css`) remain for **backward compatibility** until apps and store URLs point at **gameseekrs-site**. Same pattern as Optima’s split between program repo and **`optimasanitas-site`**.
+
+**Legacy: GitHub Pages** on **`gameseekrs-max/Gameseekrs`** (folder **`/docs`**):
 
 1. **Settings** → **Pages** → **Build and deployment**
 2. **Source:** Deploy from a branch
