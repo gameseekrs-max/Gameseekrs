@@ -22,10 +22,11 @@ Provider wallet: `vault-runner-authority.json` (gitignored) — pubkey must matc
 | Piece | Visibility | Typical GitHub remote | Notes |
 |--------|------------|----------------------|--------|
 | **This repo** (`Gameseekrs`) | **Public** | `gameseekrs-max/Gameseekrs` | Anchor program, **PRIVACY.md**, **LICENSE.md**, **[docs/PRIVACY_GSKRS_FLASHLIGHT.md](./docs/PRIVACY_GSKRS_FLASHLIGHT.md)** (Flashlight privacy), compliance links for stores and forms. |
-| **Vault Runner app** (React Native) | **Private** | e.g. `gameseekrs-max/SeekrsRampageApp` | Rename the GitHub repo to match **Vault Runner** branding when convenient; update local `git remote` and any CI. |
-| **GSkrs Flashlight** (React Native) | **Private** (typical) | e.g. `gameseekrs-max/GSkrsFlashlight` | Seeker companion app; listing privacy URL = **`docs/PRIVACY_GSKRS_FLASHLIGHT.md`** in this public repo. |
+| **Static hub** (legal HTML for Sol.site) | **Public** | `gameseekrs-max/gameseekrs-site` | Store / in-app **`GAMESEEKRS_LEGAL_PAGES_BASE`** → **`gameseekrs.sol.site`**; do not point listings at private app repo blobs. |
+| **Vault Runner app** (React Native) | **Private** | `gameseekrs-max/VaultRunner` | **Do not** set to **public** without an explicit org decision — see **`VaultRunner/docs/continuation.md`** (*gameseekrs-max org — GitHub visibility*). |
+| **GSkrs Flashlight** (React Native) | **Private** | `gameseekrs-max/GSkrsFlashlight` | Same rule as Vault Runner; HTML policies on **`gameseekrs-site`**; markdown source in this public repo. |
 
-**Public HTTPS (SNS `gameseekrs.sol` + Sol.site):** **`https://gameseekrs.sol.site`** — same GitHub Pages content as below, once the custom domain is configured. **[@gameseekrs on X](https://x.com/gameseekrs)** is for social updates. Legal and program transparency also use **this public Git** (links above).
+**Public HTTPS (SNS `gameseekrs.sol` + Sol.site):** **`https://gameseekrs.sol.site`** — Pages from **`gameseekrs-max/gameseekrs-site`** (and legacy **`Gameseekrs`** `/docs` until fully migrated). **[@gameseekrs on X](https://x.com/gameseekrs)** is for social updates. Program transparency uses **this public** Anchor repo; store-facing legal HTML uses the **hub** repo.
 
 ---
 
