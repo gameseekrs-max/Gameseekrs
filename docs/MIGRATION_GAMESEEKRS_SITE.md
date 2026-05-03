@@ -1,13 +1,13 @@
 # Migration: public hub → `gameseekrs-site`
 
-The GameSeekrs **landing + legal HTML** now has a **dedicated** public repo, same pattern as Optima’s **`optimasanitas-site`**:
+The GameSeekrs **landing + legal HTML** now has a **dedicated** public repo, same *deployment* pattern as Optima’s **`optimasanitas-site`**, but **its own** layout and stylesheets (**`assets/hub-site.css`**, **`assets/legal.css`**) — do not visually clone the Optima hub.
 
 **`https://github.com/gameseekrs-max/gameseekrs-site`**
 
 ## Why
 
 - **Gameseekrs** (this repo) stays focused on the **Anchor program** + markdown sources.
-- **gameseekrs-site** holds **`index.html`**, per-app folders **`vault-runner/`** and **`flashlight/`**, and shared **`assets/legal.css`** at the site root — better for GitHub Pages **`/`**, IPFS, and Firebase.
+- **gameseekrs-site** holds **`index.html`**, per-app folders **`vault-runner/`** and **`flashlight/`**, and shared **`assets/legal.css`** + **`assets/hub-site.css`** at the site root — better for GitHub Pages **`/`**, IPFS, and Firebase.
 
 ## New path map (after Pages enabled on `gameseekrs-site`)
 
