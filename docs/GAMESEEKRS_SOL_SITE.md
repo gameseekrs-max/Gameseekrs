@@ -2,7 +2,7 @@
 
 **Product line:** GameSeekrs (**gameseekrs-max**) — games and utilities on Seeker; **Vault Runner** and **GSkrs Flashlight** ship today; the same **`gameseekrs.sol.site`** hub covers future titles — extend **`gameseekrs-site`** (`index.html` + `vault-runner/` / `flashlight/` or new folders). Legacy **`docs/`** pages optional during migration. Not Optima Sanitas.
 
-**Site styling:** **`gameseekrs-site`** must keep its **own** layout and CSS versus **`OptimaSanitas/optimasanitas-site`** (see **`~/Groking/GameSeekrs/games/continuation.md`** § *2026-05-03*). Same URL shape ≠ same visual theme.
+**Site styling:** **`gameseekrs-site`** must keep its **own** layout and CSS versus **`OptimaSanitas/optimasanitas-site`** (see private **`gameseekrs-max/VaultRunner`** `docs/continuation.md`, section *2026-05-03 — gameseekrs-site visual identity*). Same URL shape ≠ same visual theme.
 
 ## URLs
 
