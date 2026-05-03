@@ -54,4 +54,4 @@ To the extent permitted, you and GameSeekrs agree to resolve disputes in a forum
 
 ---
 
-*For comparison only: **Seeker Mobile Calc** (Optima Sanitas) uses a similar structure but is a different product; see `~/Groking/Optima_newApps/SeekerMobileCalc/docs/TERMS.md`.*
+*Other Seeker apps may use a similar document structure; they remain separate products with their own terms.*

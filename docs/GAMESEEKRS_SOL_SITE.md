@@ -1,8 +1,8 @@
 # `gameseekrs.sol` → Sol.site + GitHub Pages
 
-**Product line:** GameSeekrs (**gameseekrs-max**) — games and utilities on Seeker; **Vault Runner** and **GSkrs Flashlight** ship today; the same **`gameseekrs.sol.site`** hub covers future titles — extend **`gameseekrs-site`** (`index.html` + `vault-runner/` / `flashlight/` or new folders). Legacy **`docs/`** pages optional during migration. Not Optima Sanitas.
+**Product line:** GameSeekrs (**gameseekrs-max**) — games and utilities on Seeker; **Vault Runner** and **GSkrs Flashlight** ship today; the same **`gameseekrs.sol.site`** hub covers future titles — extend **`gameseekrs-site`** (`index.html` + `vault-runner/` / `flashlight/` or new folders). Legacy **`docs/`** pages optional during migration.
 
-**Site styling:** **`gameseekrs-site`** must keep its **own** layout and CSS versus **`OptimaSanitas/optimasanitas-site`** (see private **`gameseekrs-max/VaultRunner`** `docs/continuation.md`, section *2026-05-03 — gameseekrs-site visual identity*). Same URL shape ≠ same visual theme.
+**Site styling:** **`gameseekrs-site`** keeps its **own** layout and CSS (see private **`gameseekrs-max/VaultRunner`** `docs/continuation.md`, section *2026-05-03 — gameseekrs-site visual identity*). Same URL shape ≠ same visual theme as unrelated publisher hubs.
 
 ## URLs
 

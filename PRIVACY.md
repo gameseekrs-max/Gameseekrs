@@ -52,4 +52,4 @@ We may update this policy by committing a new version to this **public** GitHub 
 
 ---
 
-*Optima Sanitas / `sanitas_seeker` materials in separate reference archives are **not** this product and use **different** program IDs. Do not mix compliance or keys between those projects and Vault Runner.*
+*Materials in unrelated third-party reference archives are **not** this product and use **different** program IDs. Do not mix compliance or keys between those projects and Vault Runner.*

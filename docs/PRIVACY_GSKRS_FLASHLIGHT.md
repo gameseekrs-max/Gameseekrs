@@ -56,4 +56,4 @@ We may update this policy by committing a new version to this **public** GitHub 
 
 ---
 
-*Optima Sanitas / `sanitas_seeker` materials in separate reference archives are **not** this product. Do not mix compliance or keys between those projects and **GameSeekrs** apps.*
+*Materials in unrelated third-party reference archives are **not** this product. Do not mix compliance or keys between those projects and **GameSeekrs** apps.*

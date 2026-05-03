@@ -1,6 +1,6 @@
 # Migration: public hub → `gameseekrs-site`
 
-The GameSeekrs **landing + legal HTML** now has a **dedicated** public repo, same *deployment* pattern as Optima’s **`optimasanitas-site`**, but **its own** layout and stylesheets (**`assets/hub-site.css`**, **`assets/legal.css`**) — do not visually clone the Optima hub.
+The GameSeekrs **landing + legal HTML** now has a **dedicated** public static-site repo with **its own** layout and stylesheets (**`assets/hub-site.css`**, **`assets/legal.css`**) — do not visually clone unrelated publisher hubs.
 
 **`https://github.com/gameseekrs-max/gameseekrs-site`**
 

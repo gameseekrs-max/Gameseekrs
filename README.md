@@ -32,9 +32,7 @@ Provider wallet: `vault-runner-authority.json` (gitignored) — pubkey must matc
 
 ## Not this project
 
-**Optima Sanitas** / **`sanitas_seeker`** / **`OptimaSanitas-reference-*.zip`** are a **different** codebase and product. They use **different** program IDs and keys. **Do not** copy `PROGRAM_IDS.md`, deployer keys, or compliance text from that zip into Vault Runner or this repo.
-
-**GameSeekrs vs health copy:** This line is **games and utilities**. Public pages and store prose should **not** use medical, wellness, or health-advice disclaimers — see private **`VaultRunner`** `docs/continuation.md` (*GameSeekrs public copy — not health or wellness positioning*).
+Third-party reference archives and **other teams’** on-chain programs use **different** IDs and keys. **Do not** copy their `PROGRAM_IDS.md`, deployer keys, or legal text into Vault Runner or this repo.
 
 ---
 

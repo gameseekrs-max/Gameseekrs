@@ -2,7 +2,7 @@
 
 > **Preferred hub:** dedicated repo **`gameseekrs-max/gameseekrs-site`** — root **`index.html`**, **`vault-runner/`**, **`flashlight/`**, **`assets/legal.css`**. See **`../MIGRATION_GAMESEEKRS_SITE.md`**.
 
-These static pages (`*.html` + `base.css`) remain for **backward compatibility** until apps and store URLs point at **gameseekrs-site**. Same pattern as Optima’s split between program repo and **`optimasanitas-site`**.
+These static pages (`*.html` + `base.css`) remain for **backward compatibility** until apps and store URLs point at **gameseekrs-site** — program repo plus separate static legal hub.
 
 **Legacy: GitHub Pages** on **`gameseekrs-max/Gameseekrs`** (folder **`/docs`**):
 
@@ -16,7 +16,7 @@ Live base URLs (same deployment after custom domain is set):
 - **SNS + Sol.site (reviewers / MWA identity):** **`https://gameseekrs.sol.site`**
 - **GitHub Pages default:** **`https://gameseekrs-max.github.io/Gameseekrs/`**
 
-**Landing page:** **`../index.html`** at the site root — both apps, disclaimer, legal links, and official URLs (same pattern as Optima’s public legal repo).
+**Landing page:** **`../index.html`** at the site root — both apps, disclaimer, legal links, and official URLs.
 
 Legal routes (used by **VaultRunner** and **GSkrsFlashlight** `publicLinks.ts`):
 
