@@ -7,7 +7,7 @@ The GameSeekrs **landing + legal HTML** now has a **dedicated** public static-si
 ## Why
 
 - **Gameseekrs** (this repo) stays focused on the **Anchor program** + markdown sources.
-- **gameseekrs-site** holds **`index.html`**, per-app folders **`vault-runner/`** and **`flashlight/`**, and shared **`assets/legal.css`** + **`assets/hub-site.css`** at the site root — better for GitHub Pages **`/`**, IPFS, and Firebase.
+- **gameseekrs-site** holds **`index.html`**, per-app folders **`vault-runner/`** and **`flashlight/`**, and shared **`assets/legal.css`** + **`assets/hub-site.css`** at the site root — better for GitHub Pages from **`/`** on **`main`**.
 
 **Continuation / agent handoffs:** This **`Gameseekrs`** repo is **public** — root **`CONTINUATION.md`** is a **stub** only. Full narrative lives in **private** **`gameseekrs-max/VaultRunner`** → **`docs/continuation.md`** (see section *Continuation files — private repos only* there).
 
