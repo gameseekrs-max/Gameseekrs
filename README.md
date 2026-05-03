@@ -1,7 +1,5 @@
 On-chain Anchor program for **Vault Runner** — a **GameSeekrs** arcade title **for [Solana Mobile Seeker](https://solanamobile.com/seeker)** (Android). PDAs are per this program id.
 
-**Handoff (2026-04-26):** Privacy + README copy updated for **Seeker**; **`main` pushed** to **`gameseekrs-max/Gameseekrs`**. **GSkrs Flashlight** client is **not** this repo; legal for Flashlight is `docs/PRIVACY_GSKRS_FLASHLIGHT.md` (Flashlight’s own git remote **not** created yet on the dev machine used for that pass).
-
 - Reach Level 3 → Legend SBT offer (eligibility in published app / terms when a mainnet program is announced)
 - Optional on-chain features for qualified accounts follow the deployed program; **not** a public promise of any SKR distribution until you publish that program and policies
 
@@ -13,20 +11,9 @@ Devnet program id: `J1K3v6h1gWDbMqTZCgCzhptHLphCmxqh11fJEMZhcTJA`
 Deploy keypair: `target/deploy/seeker_rampage-keypair.json` (gitignored with `target/`).  
 Provider wallet: `vault-runner-authority.json` (gitignored) — pubkey must match `DEPLOYER_AUTHORITY` in `lib.rs`.
 
----
+**GameSeekrs** is the brand for Seeker **games and utilities** — **Vault Runner** (arcade) and **GSkrs Flashlight** (flashlight and tools). Official hub and styled legal HTML: **`https://gameseekrs.sol.site`** ([gameseekrs-max/gameseekrs-site](https://github.com/gameseekrs-max/gameseekrs-site)). Social: **[@gameseekrs on X](https://x.com/gameseekrs)**.
 
-## Repositories (GameSeekrs)
-
-**GameSeekrs** is the **brand** for Seeker games and utilities — **Vault Runner** (arcade) and **GSkrs Flashlight** ship today; **additional titles** under the same line should keep using **`https://gameseekrs.sol.site`** and extend **`docs/index.html`** / **`docs/legal/`** as you add policies.
-
-| Piece | Visibility | Typical GitHub remote | Notes |
-|--------|------------|----------------------|--------|
-| **This repo** (`Gameseekrs`) | **Public** | `gameseekrs-max/Gameseekrs` | Anchor program, **PRIVACY.md**, **LICENSE.md**, **[docs/PRIVACY_GSKRS_FLASHLIGHT.md](./docs/PRIVACY_GSKRS_FLASHLIGHT.md)** (Flashlight privacy), compliance links for stores and forms. |
-| **Static hub** (legal HTML for Sol.site) | **Public** | `gameseekrs-max/gameseekrs-site` | Store / in-app **`GAMESEEKRS_LEGAL_PAGES_BASE`** → **`gameseekrs.sol.site`**; do not point listings at private app repo blobs. |
-| **Vault Runner app** (React Native) | **Private** | `gameseekrs-max/VaultRunner` | **Do not** set to **public** without an explicit org decision — see **`VaultRunner/docs/continuation.md`** (*gameseekrs-max org — GitHub visibility*). |
-| **GSkrs Flashlight** (React Native) | **Private** | `gameseekrs-max/GSkrsFlashlight` | Same rule as Vault Runner; HTML policies on **`gameseekrs-site`**; markdown source in this public repo. |
-
-**Public HTTPS (SNS `gameseekrs.sol` + Sol.site):** **`https://gameseekrs.sol.site`** — Pages from **`gameseekrs-max/gameseekrs-site`** (and legacy **`Gameseekrs`** `/docs` until fully migrated). **[@gameseekrs on X](https://x.com/gameseekrs)** is for social updates. Program transparency uses **this public** Anchor repo; store-facing legal HTML uses the **hub** repo.
+This repository holds the **Anchor** program (open for review), **markdown** privacy/terms sources, and links stores can use for compliance.
 
 ---
 

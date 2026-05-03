@@ -18,7 +18,7 @@ Live base URLs (same deployment after custom domain is set):
 
 **Landing page:** **`../index.html`** at the site root — both apps, disclaimer, legal links, and official URLs.
 
-Legal routes (used by **VaultRunner** and **GSkrsFlashlight** `publicLinks.ts`):
+Legal routes (legacy paths; prefer **`gameseekrs.sol.site`** hub URLs for new listings):
 
 | File | Use |
 |------|-----|
@@ -30,4 +30,4 @@ Legal routes (used by **VaultRunner** and **GSkrsFlashlight** `publicLinks.ts`):
 
 **Sync:** When you change the markdown in this repo’s root or `docs/*.md`, update the matching HTML (or copy from a future generator). **Authoritative** legal text in Git remains the **`.md`** files; these HTML files are the **formatted** public view.
 
-**Private app repos** (Vault Runner, GSkrs Flashlight) use **`publicLinks.ts`** with `GAMESEEKRS_LEGAL_PAGES_BASE` + paths above.
+Apps should open **HTTPS** pages users can load without signing in to GitHub — prefer the **`gameseekrs-site`** hub at **`gameseekrs.sol.site`** once migration is complete.
